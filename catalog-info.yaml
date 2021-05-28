@@ -4,6 +4,7 @@ metadata:
   name: spring-petclinic
   annotations:
     github.com/project-slug: dbbaskette/spring-petclinic
+    'backstage.io/kubernetes-id': spring-petclinic
 spec:
   type: other
   lifecycle: unknown
