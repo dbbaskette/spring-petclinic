@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spring-petclinic
+  annotations:
+    github.com/project-slug: dbbaskette/spring-petclinic
+spec:
+  type: other
+  lifecycle: unknown
+  owner: team-a
