@@ -4,7 +4,6 @@ repo_url: https://github.com/dbbaskette/spring-petclinic/
 
 nav:
   - Home: readme.md
-  - Adding Documentation: add-docs.md
-
+  
 plugins:
   - techdocs-core
