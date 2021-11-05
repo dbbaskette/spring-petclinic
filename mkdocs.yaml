@@ -3,7 +3,7 @@ repo_url: https://github.com/dbbaskette/spring-petclinic/
 
 
 nav:
-  - Home: readme.md
+  - Home: index.md
   
 plugins:
   - techdocs-core
