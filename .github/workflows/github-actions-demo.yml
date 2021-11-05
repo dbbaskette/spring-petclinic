@@ -10,5 +10,5 @@ jobs:
         with:
           node-version: '17.x'
       - name: Install dependencies
-        run:  npx @techdocs/cli generate --source-dir ${{ github.workspace }}~/GitRepos/tap-catalog --output-dir ./site
+        run:  npx @techdocs/cli generate --source-dir ${{ github.workspace }} --output-dir ./site
       - run:  npx @techdocs/cli publish --publisher-type awsS3 --storage-name dbb-tapgui-techdocs-bucket --entity default/Component/spring-petclinic --directory ./site
