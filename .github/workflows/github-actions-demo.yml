@@ -16,4 +16,4 @@ jobs:
           AWS_REGION: ${{ secrets.REG }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AK }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.SAK }}
-        run:  npx @techdocs/cli publish --publisher-type awsS3 --storage-name dbb-tapgui-techdocs-bucket --entity default/Component/spring-petclinic --directory ./site
+        run:  npx @techdocs/cli publish --publisher-type awsS3 --storage-name ${{ secrets.BUCKET }} --entity default/Component/spring-petclinic --directory ./site
