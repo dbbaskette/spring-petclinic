@@ -9,6 +9,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '17.x'
-      - name: Install dependencies
+      - name: Install dependencies and Generate docs
         run:  npx @techdocs/cli generate --source-dir ${{ github.workspace }} --output-dir ./site
-      - run:  npx @techdocs/cli publish --publisher-type awsS3 --storage-name dbb-tapgui-techdocs-bucket --entity default/Component/spring-petclinic --directory ./site
+      - name: Upload docs
+        env:
+          AWS_REGION: ${{ secrets.REG }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AK }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.SAK }}
+        run:  npx @techdocs/cli publish --publisher-type awsS3 --storage-name dbb-tapgui-techdocs-bucket --entity default/Component/spring-petclinic --directory ./site
