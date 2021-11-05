@@ -11,7 +11,6 @@ metadata:
     - tanzu
   annotations:
     'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=petclinic-server'
-    backstage.io/techdocs-ref: dir:.
 spec:
   type: service
   lifecycle: experimental
