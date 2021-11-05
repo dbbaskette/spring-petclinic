@@ -1,0 +1,7 @@
+site_name: 'spring-petclinic Docs'
+
+nav:
+  - Home: readme.md
+
+plugins:
+  - techdocs-core
