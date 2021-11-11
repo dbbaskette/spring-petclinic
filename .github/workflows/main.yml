@@ -33,7 +33,7 @@ jobs:
           chmod +x ./pivnet
           ls -al
           ./pivnet login --api-token ${{ secrets.PIVNET_TOKEN }}
-          ./pivnet download-product-files --product-slug='tanzu-application-platform' --release-version='0.3.0' --product-file-id=1080177
+          ./pivnet download-product-files --product-slug='tanzu-application-platform' --release-version='0.3.0' --product-file-id=1080178
           tar -xvf tanzu-framework-linux-amd64.tar -C $HOME/tanzu
           cd $HOME/tanzu
           install cli/core/v0.10.0/tanzu-core-linux_amd64 /usr/local/bin/tanzu
