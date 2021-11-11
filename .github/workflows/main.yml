@@ -29,7 +29,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Get Tanzu CLI
-          wget https://github.com/pivotal-cf/pivnet-cli/releases/download/v3.0.1/pivnet-linux-amd64-3.0.1 -o pivnet
+          wget https://github.com/pivotal-cf/pivnet-cli/releases/download/v3.0.1/pivnet-linux-amd64-3.0.1 -O pivnet
           chmod +x ./pivnet
           ls -al
           ./pivnet login --api-token ${{ secrets.PIVNET_TOKEN }}
